@@ -112,7 +112,7 @@ def decode_image(image_path):
 
 # ---------------------- GUI HANDLERS ----------------------
 def select_image():
-    filename = filedialog.askopenfilename(filetypes=[("Image files", "*.png;*.bmp;*.jpg;*.jpeg")])
+    filename = filedialog.askopenfilename(filetypes=[("Image files", "*.png;*.bmp;*.jpg")])
     if filename:
         image_entry.delete(0, tk.END)
         image_entry.insert(0, filename)
