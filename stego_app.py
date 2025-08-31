@@ -43,7 +43,7 @@ def encode_image(image_path, text_input=None, file_input=None):
         print(f"[INFO] Data size to embed: {required_bits} bits (~{required_bits // 8} bytes)")
 
         if required_bits > capacity_bits:
-            messagebox.showerror("Error", "File too large for the selected image!")
+            messagebox.showerror("Error", "File too large for the selected image, please adjust the length of message!")
             print("[ERROR] Embedding aborted: Not enough capacity.")
             return
 
@@ -137,7 +137,7 @@ def drag_and_drop(event):
         file_entry.delete(0, tk.END)
         file_entry.insert(0, dropped_file)
 
-# ---------------------- GUI ----------------------
+# ---------------------- GUI -------------------------
 root = TkinterDnD.Tk()
 root.title("Steganography Tool")
 root.geometry("500x400")
