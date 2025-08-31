@@ -10,4 +10,3 @@ A GUI-based application to hide text or files inside images using LSB steganogra
 
 ## Requirements
 - Python 3.13+
-- Install dependencies:
